@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class Flatlist extends Component {
   render() {
-    <div>
+    <div className="col">
       TODO
     </div>
   }
