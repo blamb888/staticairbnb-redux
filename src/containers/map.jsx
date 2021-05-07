@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 class Map extends Component {
   render() {
-    <div className="col">
-      TODO
-    </div>
+    return (
+      <div className="col-sm-5">
+        TODO
+      </div>
+    );
   }
 }
 
