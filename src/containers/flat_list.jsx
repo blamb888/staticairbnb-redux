@@ -14,6 +14,9 @@ class Flatlist extends Component {
     }]
   }
 
+  componentWillMount() {
+    // TODO: dispatch an action to update the Redux State tree (flats)
+  }
 
   render() {
     return (
