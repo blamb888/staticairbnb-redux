@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
-
+// eslint-disable-next-line react/prefer-stateless-function
 class Flat extends Component {
   render() {
-
-    const style = {
-      //linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg
-      backgroundImage: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(${this.props.flat.imageUrl})`
-    };
-
-    return(
-      <div className="card-trip">
-        <img src={style} />
-        <div className="card-trip-infos">
+    return (
+      <div class="flat card-trip">
+        <img src={this.props.flat.imageUrl} alt="" />
+        <div class="card-trip-infos">
           <div>
             <h2>{this.props.flat.name}</h2>
-            <p></p>
+            <p>Short description here!</p>
           </div>
-          <h2 className="card-trip-pricing">{this.props.flat.price}{this.props.flat.priceCurrency}</h2>
+          <h2 class="card-trip-pricing">
+            {this.props.flat.price}
+            &nbsp;{this.props.flat.priceCurrency}
+          </h2>
+          <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
         </div>
       </div>
 
