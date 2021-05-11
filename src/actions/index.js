@@ -1,10 +1,10 @@
-import flats from '../flats';
+import flats from '../reducers/flats';
 
-export default function setFlats() {
-// TODO: Api call! For now, simulate a DB
-
+function setFlats() {
   return {
     type: 'SET_FLATS',
     payload: flats
   };
 }
+
+export default setFlats;
