@@ -22,3 +22,7 @@ body {
   cursor: pointer;
   border: 6px solid transparent;
 }
+
+.selected {
+  border: 6px dashed rgba(67, 209, 174, 0.842);
+}

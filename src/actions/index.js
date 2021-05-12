@@ -1,10 +1,15 @@
 import flats from '../reducers/flats';
 
-function setFlats() {
+export function setFlats() {
   return {
-    type: 'SET_FLATS',
+    type: "SET_FLATS",
     payload: flats
   };
 }
 
-export default setFlats;
+export function selectFlat(flat) {
+  return {
+    type: "SELECT_FLAT",
+    payload: flat
+  };
+}

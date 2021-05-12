@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+
+import { selectFlat } from '../actions';
+
 // eslint-disable-next-line react/prefer-stateless-function
 class Flat extends Component {
   render() {
@@ -22,4 +27,15 @@ class Flat extends Component {
   }
 }
 
-export default Flat;
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ selectFlat: selectFlat }, dispatch);
+}
+
+function mapStateToProps(state) {
+  return {
+    selectedFlat: state.selectedFlat
+  };
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Flat);
