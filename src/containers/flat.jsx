@@ -9,8 +9,8 @@ class Flat extends Component {
   render() {
 
     const style = {
-      marginBottom: "24px",
-      marginTop: "24px",
+      marginBottom: "4px",
+      marginTop: "4px",
       marginLeft: "4px",
       display: "flex",
       flexWrap: "wrap",
