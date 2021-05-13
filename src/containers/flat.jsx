@@ -7,8 +7,19 @@ import { selectFlat } from '../actions';
 // eslint-disable-next-line react/prefer-stateless-function
 class Flat extends Component {
   render() {
+
+    const style = {
+      marginBottom: "24px",
+      marginTop: "24px",
+      marginLeft: "4px",
+      display: "flex",
+      flexWrap: "wrap",
+      listStyle: "none",
+      justifyContent: "center"
+    };
+
     return (
-      <div className="flat card-trip">
+      <div style={style} className="flat card-trip">
         <img id="cardImage" src={this.props.flat.imageUrl} alt="" />
         <div className="card-trip-infos">
           <div>
