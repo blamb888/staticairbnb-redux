@@ -1,4 +1,4 @@
-import flats from '../reducers/flats';
+import flats from './flats';
 
 export function setFlats() {
   return {

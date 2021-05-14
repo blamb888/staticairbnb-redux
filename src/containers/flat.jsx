@@ -6,8 +6,11 @@ import { selectFlat } from '../actions';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class Flat extends Component {
-  render() {
+  handleClick = () => {
+    this.props.selectFlat(this.props.flat);
+  };
 
+  render() {
     const style = {
       marginBottom: "4px",
       marginTop: "4px",
@@ -18,8 +21,13 @@ class Flat extends Component {
       justifyContent: "center"
     };
 
+    let classes = "flat card-trip";
+    if (this.props.flat === this.props.selectedFlat) {
+      classes += " selected";
+    }
+
     return (
-      <div style={style} className="flat card-trip">
+      <div style={style} className={classes} onClick={this.handleClick}>
         <img id="cardImage" src={this.props.flat.imageUrl} alt="" />
         <div className="card-trip-infos">
           <div>

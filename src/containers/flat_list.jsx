@@ -17,6 +17,7 @@ class FlatList extends Component {
   }
 
   componentWillMount() {
+    // This will fetch the data. Dispatch an action to update the Redux state tree.
     this.props.setFlats();
   }
 
